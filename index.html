@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Поток — автоматизация рутины для малого бизнеса</title>
+    <meta name="description" content="Заявки с сайта сами попадают в таблицу, в Telegram менеджеру и клиенту приходит автоответ. Посмотрите, как это работает, прямо на странице.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header class="nav" id="nav">
+        <div class="container nav-inner">
+            <a href="#top" class="logo" aria-label="Поток — на главную">
+                <span class="logo-mark" aria-hidden="true"></span>Поток
+            </a>
+            <nav class="nav-links" aria-label="Основная навигация">
+                <a href="#tasks">Что автоматизируем</a>
+                <a href="#demo">Демо</a>
+                <a href="#calc">Калькулятор</a>
+                <a href="#pricing">Цены</a>
+                <a href="#faq">Вопросы</a>
+            </nav>
+            <a href="#demo" class="btn btn-small">Попробовать</a>
+        </div>
+    </header>
+
+    <main id="top">
+
+        <!-- Hero -->
+        <section class="hero">
+            <div class="container hero-grid">
+                <div class="hero-text">
+                    <span class="eyebrow">Автоматизация для малого бизнеса</span>
+                    <h1>Заявки, письма и отчёты — <span class="hl">без ручной работы</span></h1>
+                    <p class="lead">
+                        Настраиваю цепочки, в которых заявка с сайта сама попадает в таблицу,
+                        менеджеру приходит сообщение в Telegram, а клиенту — ответ. Вам остаётся только отвечать людям.
+                    </p>
+                    <div class="hero-actions">
+                        <a href="#demo" class="btn">Посмотреть в деле</a>
+                        <a href="#calc" class="btn btn-ghost">Посчитать выгоду</a>
+                    </div>
+                    <ul class="hero-facts">
+                        <li><b>1–2 дня</b> на типовую цепочку</li>
+                        <li><b>0 ₽</b> за обслуживание первый месяц</li>
+                    </ul>
+                </div>
+
+                <div class="hero-visual" aria-hidden="true">
+                    <div class="flow">
+                        <div class="flow-node"><span class="flow-ico">📝</span><div><b>Заявка с сайта</b><small>Анна · Сайт-визитка</small></div></div>
+                        <div class="flow-link"></div>
+                        <div class="flow-node"><span class="flow-ico">📊</span><div><b>Строка в таблице</b><small>#1042 · Новая</small></div></div>
+                        <div class="flow-link"></div>
+                        <div class="flow-node"><span class="flow-ico">✈️</span><div><b>Сообщение менеджеру</b><small>Telegram · 0,4 с</small></div></div>
+                        <div class="flow-link"></div>
+                        <div class="flow-node"><span class="flow-ico">✉️</span><div><b>Автоответ клиенту</b><small>Письмо отправлено</small></div></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Что автоматизируем -->
+        <section class="section" id="tasks">
+            <div class="container">
+                <div class="section-head">
+                    <h2>Что можно отдать роботу</h2>
+                    <p>Всё, что вы делаете руками по одному и тому же сценарию. Вот самое частое.</p>
+                </div>
+                <div class="cards">
+                    <article class="card">
+                        <span class="card-ico" aria-hidden="true">📥</span>
+                        <h3>Заявки в таблицу или CRM</h3>
+                        <p>Форма на сайте, сообщение в мессенджере или письмо — всё собирается в одном месте, без копипаста.</p>
+                    </article>
+                    <article class="card">
+                        <span class="card-ico" aria-hidden="true">🔔</span>
+                        <h3>Уведомления в Telegram</h3>
+                        <p>Менеджер сразу видит заявку и берёт её в работу одной кнопкой. Если не взял — бот напомнит.</p>
+                    </article>
+                    <article class="card">
+                        <span class="card-ico" aria-hidden="true">💬</span>
+                        <h3>Автоответы клиентам</h3>
+                        <p>Клиент получает подтверждение и следующие шаги, пока вы заняты другим.</p>
+                    </article>
+                    <article class="card">
+                        <span class="card-ico" aria-hidden="true">📈</span>
+                        <h3>Отчёты без выгрузок</h3>
+                        <p>Сводка по заявкам и продажам приходит сама: каждое утро или раз в неделю, в удобное место.</p>
+                    </article>
+                    <article class="card">
+                        <span class="card-ico" aria-hidden="true">💳</span>
+                        <h3>Напоминания об оплате</h3>
+                        <p>Счёт отправлен — через три дня клиенту уйдёт вежливое напоминание, а вам — отметка в таблице.</p>
+                    </article>
+                    <article class="card">
+                        <span class="card-ico" aria-hidden="true">⭐</span>
+                        <h3>Сбор отзывов</h3>
+                        <p>После выполнения заказа клиенту автоматически приходит просьба оценить работу.</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Демо -->
+        <section class="section section-dark" id="demo">
+            <div class="container">
+                <div class="section-head">
+                    <h2>Попробуйте сами</h2>
+                    <p>Отправьте тестовую заявку и посмотрите, что произойдёт дальше. Это работает прямо в браузере, ничего никуда не уходит.</p>
+                </div>
+
+                <div class="demo">
+                    <form class="demo-form" id="lead-form" novalidate>
+                        <h3>Заявка с сайта</h3>
+                        <label>
+                            <span>Имя</span>
+                            <input type="text" name="name" value="Анна" maxlength="40" autocomplete="off" required>
+                        </label>
+                        <label>
+                            <span>Что нужно</span>
+                            <select name="service">
+                                <option value="Сайт-визитка|40000">Сайт-визитка — 40 000 ₽</option>
+                                <option value="Интернет-магазин|120000">Интернет-магазин — 120 000 ₽</option>
+                                <option value="Telegram-бот|30000">Telegram-бот — 30 000 ₽</option>
+                            </select>
+                        </label>
+                        <label>
+                            <span>Как связаться</span>
+                            <input type="text" name="contact" value="anna@example.com" maxlength="60" autocomplete="off" required>
+                        </label>
+                        <p class="form-error" id="form-error" role="alert" hidden></p>
+                        <button type="submit" class="btn btn-block" id="send-btn">Отправить заявку</button>
+                        <p class="hint" id="demo-hint">Нажмите, чтобы запустить цепочку.</p>
+                    </form>
+
+                    <div class="steps" id="steps">
+                        <article class="step" data-step="1">
+                            <header><span class="step-num">1</span><h4>Заявка принята</h4><span class="chip" data-chip>ждёт</span></header>
+                            <div class="step-body" data-out><p class="placeholder">Проверяем поля и присваиваем номер.</p></div>
+                        </article>
+                        <article class="step" data-step="2">
+                            <header><span class="step-num">2</span><h4>Запись в таблицу</h4><span class="chip" data-chip>ждёт</span></header>
+                            <div class="step-body" data-out>
+                                <div class="table-wrap">
+                                    <table class="sheet" aria-label="Таблица заявок">
+                                        <thead><tr><th>№</th><th>Клиент</th><th>Услуга</th><th>Сумма</th><th>Статус</th></tr></thead>
+                                        <tbody id="sheet-body"></tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </article>
+                        <article class="step" data-step="3">
+                            <header><span class="step-num">3</span><h4>Telegram менеджеру</h4><span class="chip" data-chip>ждёт</span></header>
+                            <div class="step-body" data-out><p class="placeholder">Сообщение с кнопкой появится здесь.</p></div>
+                        </article>
+                        <article class="step" data-step="4">
+                            <header><span class="step-num">4</span><h4>Автоответ клиенту</h4><span class="chip" data-chip>ждёт</span></header>
+                            <div class="step-body" data-out><p class="placeholder">Письмо клиенту появится здесь.</p></div>
+                        </article>
+                    </div>
+                </div>
+
+                <p class="demo-result" id="demo-result" role="status" aria-live="polite"></p>
+            </div>
+        </section>
+
+        <!-- Как это работает -->
+        <section class="section" id="how">
+            <div class="container">
+                <div class="section-head">
+                    <h2>Как мы работаем</h2>
+                    <p>Без долгих согласований: три шага от разговора до работающей цепочки.</p>
+                </div>
+                <ol class="how">
+                    <li>
+                        <span class="how-num">1</span>
+                        <h3>Разбираем процесс</h3>
+                        <p>Вы рассказываете, как сейчас обрабатываете заявки или отчёты. Я нахожу, что можно убрать, и называю срок и цену.</p>
+                    </li>
+                    <li>
+                        <span class="how-num">2</span>
+                        <h3>Собираем и проверяем</h3>
+                        <p>Настраиваю цепочку на ваших инструментах и прогоняю тестовые данные, включая неудобные случаи: пустые поля, дубли, сбои.</p>
+                    </li>
+                    <li>
+                        <span class="how-num">3</span>
+                        <h3>Запускаем и сопровождаем</h3>
+                        <p>Показываю, как всё устроено, оставляю инструкцию. Первый месяц чиню и подкручиваю бесплатно.</p>
+                    </li>
+                </ol>
+                <div class="tools" aria-label="С какими инструментами работаю">
+                    <span>Telegram Bot API</span><span>Google Sheets</span><span>n8n</span><span>Make</span><span>Webhooks</span><span>Python</span><span>amoCRM / Bitrix24</span><span>E-mail</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- Калькулятор -->
+        <section class="section section-tint" id="calc">
+            <div class="container">
+                <div class="section-head">
+                    <h2>Сколько это экономит</h2>
+                    <p>Прикиньте, сколько времени уходит на рутину сейчас.</p>
+                </div>
+                <div class="calc">
+                    <div class="calc-inputs">
+                        <div class="range">
+                            <label for="c-tasks">Однотипных задач в неделю <output id="o-tasks">40</output></label>
+                            <input type="range" id="c-tasks" min="5" max="200" step="5" value="40">
+                        </div>
+                        <div class="range">
+                            <label for="c-min">Минут на одну задачу <output id="o-min">6</output></label>
+                            <input type="range" id="c-min" min="1" max="30" step="1" value="6">
+                        </div>
+                        <div class="range">
+                            <label for="c-rate">Стоимость часа сотрудника, ₽ <output id="o-rate">600</output></label>
+                            <input type="range" id="c-rate" min="200" max="3000" step="100" value="600">
+                        </div>
+                        <p class="hint">Считаем, что автоматизация закрывает 85% этих задач: остальное всё равно требует человека.</p>
+                    </div>
+                    <div class="calc-out" aria-live="polite">
+                        <div class="out-main">
+                            <span>Экономия в месяц</span>
+                            <b id="r-money">—</b>
+                        </div>
+                        <div class="out-row">
+                            <div><span>Освободится часов</span><b id="r-hours">—</b></div>
+                            <div><span>Пакет «Бизнес» окупится</span><b id="r-payback">—</b></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Цены -->
+        <section class="section" id="pricing">
+            <div class="container">
+                <div class="section-head">
+                    <h2>Сколько стоит</h2>
+                    <p>Фиксированная цена за пакет. Что входит, понятно заранее.</p>
+                </div>
+                <div class="plans">
+                    <article class="plan">
+                        <h3>Старт</h3>
+                        <p class="plan-for">Одна задача</p>
+                        <p class="price">15 000 ₽</p>
+                        <ul>
+                            <li>Заявки из формы в таблицу</li>
+                            <li>Уведомление в Telegram</li>
+                            <li>Инструкция по работе</li>
+                        </ul>
+                        <a href="#demo" class="btn btn-ghost btn-block">Выбрать</a>
+                    </article>
+                    <article class="plan plan-main">
+                        <span class="badge">Чаще берут</span>
+                        <h3>Бизнес</h3>
+                        <p class="plan-for">Полная цепочка заявки</p>
+                        <p class="price">45 000 ₽</p>
+                        <ul>
+                            <li>Всё из пакета «Старт»</li>
+                            <li>Автоответы клиентам</li>
+                            <li>Напоминания менеджеру</li>
+                            <li>Еженедельный отчёт</li>
+                            <li>Месяц сопровождения</li>
+                        </ul>
+                        <a href="#demo" class="btn btn-block">Выбрать</a>
+                    </article>
+                    <article class="plan">
+                        <h3>Под ключ</h3>
+                        <p class="plan-for">Несколько процессов</p>
+                        <p class="price">от 90 000 ₽</p>
+                        <ul>
+                            <li>Интеграция с CRM</li>
+                            <li>Счета, оплата, напоминания</li>
+                            <li>Сбор отзывов</li>
+                            <li>3 месяца сопровождения</li>
+                        </ul>
+                        <a href="#demo" class="btn btn-ghost btn-block">Выбрать</a>
+                    </article>
+                </div>
+                <p class="note">Это демонстрационный лендинг, цены вымышленные.</p>
+            </div>
+        </section>
+
+        <!-- FAQ -->
+        <section class="section section-tint" id="faq">
+            <div class="container narrow">
+                <div class="section-head">
+                    <h2>Частые вопросы</h2>
+                </div>
+                <div class="faq">
+                    <details>
+                        <summary>Нужно ли переходить на другие программы?</summary>
+                        <p>Нет. Подключаюсь к тому, чем вы уже пользуетесь: таблицы, мессенджеры, почта, популярные CRM. Если инструмента не хватает, предложу замену, но решать вам.</p>
+                    </details>
+                    <details>
+                        <summary>Что будет, если что-то сломается?</summary>
+                        <p>Каждая цепочка пишет журнал и сообщает вам в Telegram, если шаг не сработал. Первый месяц исправляю всё бесплатно, дальше — по договорённости.</p>
+                    </details>
+                    <details>
+                        <summary>Где хранятся данные клиентов?</summary>
+                        <p>У вас: в вашей таблице, CRM и почте. Я не создаю отдельных баз, а доступы оформляются на ваш аккаунт.</p>
+                    </details>
+                    <details>
+                        <summary>Сколько времени занимает запуск?</summary>
+                        <p>Типовая цепочка из пакета «Старт» или «Бизнес» — один-два рабочих дня после того, как мы обсудили процесс и вы выдали доступы.</p>
+                    </details>
+                    <details>
+                        <summary>Могу ли я потом менять цепочку сам?</summary>
+                        <p>Да. Собираю на понятных визуальных инструментах и оставляю инструкцию: текст сообщений и условия можно править без программиста.</p>
+                    </details>
+                </div>
+            </div>
+        </section>
+
+        <!-- Финальный CTA -->
+        <section class="section final">
+            <div class="container final-inner">
+                <h2>Хватит копировать заявки руками</h2>
+                <p>Отправьте тестовую заявку и убедитесь, что так проще.</p>
+                <a href="#demo" class="btn btn-light">Запустить демо</a>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container footer-inner">
+            <span>© 2026 Поток · демо-проект</span>
+            <span>Сделано <a href="https://github.com/AdelBashiroff" target="_blank" rel="noopener">adelbashiroff</a></span>
+        </div>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>
