@@ -274,6 +274,9 @@ input[type="range"]::-moz-range-thumb { width: 18px; height: 18px; border-radius
     .cards, .how, .plans, .steps { grid-template-columns: 1fr; }
     .step:nth-child(-n+2) { grid-column: auto; }
     .calc-inputs, .calc-out { padding: 24px; }
+    .step-body { padding: 12px; }
+    .sheet { font-size: .84rem; }
+    .sheet th, .sheet td { padding: 8px 6px; }
     .plan-main { order: -1; }
 }
 
